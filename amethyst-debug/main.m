@@ -8,14 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "AMDebugOutput.h"
+
 int main(int argc, const char * argv[])
 {
-
     @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        AMDebugOutput *debugOutput = [[AMDebugOutput alloc] init];
+        [debugOutput outputDebugData];
     }
     return 0;
 }
